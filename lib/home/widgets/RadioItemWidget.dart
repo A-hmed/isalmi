@@ -34,9 +34,9 @@ class _RadioItemWidgetState extends State<RadioItemWidget> {
        Row(
          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
          children: [
-           IconButton(icon: Icon(Icons.play_arrow,size: 50,color: MyThemeData.colorPrimary,), onPressed:play),
+           IconButton(icon: Icon(Icons.play_arrow,size: 50,color: MyLightThemeData.colorPrimary,), onPressed:play),
         //   SizedBox(width: 15,),
-           IconButton(icon: Icon(Icons.stop,size: 50,color: MyThemeData.colorPrimary,), onPressed:stop)
+           IconButton(icon: Icon(Icons.stop,size: 50,color: MyLightThemeData.colorPrimary,), onPressed:stop)
          ],
        )
    ]
