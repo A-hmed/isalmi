@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget{
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int selectedIndex =3;
+  int selectedIndex =0;
 
   @override
   Widget build(BuildContext context) {
@@ -29,19 +29,19 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           bottomNavigationBar: Theme(
-            data: Theme.of(context).copyWith(canvasColor:MyThemeData.colorPrimary),
+            data: Theme.of(context).copyWith(canvasColor:MyLightThemeData.colorPrimary),
             child: BottomNavigationBar(
               onTap: onBottomNavigationItemClick,
               currentIndex: selectedIndex,
               showSelectedLabels: true,
               showUnselectedLabels: false,
-              selectedItemColor: MyThemeData.colorAccent,
+              selectedItemColor: MyLightThemeData.colorAccent,
               selectedIconTheme: IconThemeData(
                   size: 36,
-                  color:MyThemeData.colorAccent
+                  color:MyLightThemeData.colorAccent
               ),
               unselectedItemColor: Colors.white,
-              backgroundColor: MyThemeData.colorPrimary,
+              backgroundColor: MyLightThemeData.colorPrimary,
               items: [
                 BottomNavigationBarItem(icon:ImageIcon(
                   AssetImage('assets/images/ic_quran.png'),
@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          appBar: AppBar(title: Text('Islami',style: TextStyle(color: MyThemeData.colorAccent),),
+          appBar: AppBar(title: Text('Islami',style: TextStyle(color: MyLightThemeData.colorAccent),),
           backgroundColor: Colors.transparent,
             elevation: 0,
             centerTitle: true,

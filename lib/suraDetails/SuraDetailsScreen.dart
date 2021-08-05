@@ -24,7 +24,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
             )
         ),
       child: Scaffold(
-          appBar: AppBar(title: Text(args.suraName,style: TextStyle(color: MyThemeData.colorAccent),),
+          appBar: AppBar(title: Text(args.suraName,style: TextStyle(color: MyLightThemeData.colorAccent),),
             backgroundColor: Colors.transparent,
             elevation: 0,
             centerTitle: true,
